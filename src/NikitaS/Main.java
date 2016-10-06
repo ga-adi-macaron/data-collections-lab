@@ -27,13 +27,42 @@ public class Main {
 //        System.out.println(maxValue(test3));
 
         ////Test for fourth ****
-        double[] sumTest1 = {4.2,7.3,9.8, 1.0, 6.5};
-        double[] sumTest2 = {0.0, 4d, 0, 4d, 2d};
-        double[] sumTest3 = {0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8};
+//        double[] sumTest1 = {4.2,7.3,9.8, 1.0, 6.5};
+//        double[] sumTest2 = {0.0, 4d, 0, 4d, 2d};
+//        double[] sumTest3 = {0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8};
+//
+//        System.out.println("Print from return:" +sumOfValues(sumTest1)+"\n");
+//        System.out.println("Print from return:" +sumOfValues(sumTest2)+"\n");
+//        System.out.println("Print from return:" +sumOfValues(sumTest3)+"\n");
+//
+        //// Test for fifth *****
+//        char[] chars1 = {'g','a','t','o'};
+//        char[] chars2 = {'t','r','e','e',' ','f','i','t','t','y'};
+//        char[] chars3 = {'4','2','a','7','c','3','k'};
+//
+//        System.out.println("Print from outside of Function:" +charsToString(chars1)+"\n");
+//        System.out.println("Print from outside of Function:" +charsToString(chars2)+"\n");
+//        System.out.println("Print from outside of Function:" +charsToString(chars3)+"\n");
+        //// Test for sixth ******
+//        String line1 = "I'm sorry.";
+//        String line3 = "I wasn't paying attention.";
+//        String line2 = "I was just thinking";
+//        String line4= "how weird it is";
+//        String line5 = "that we eat birds.";
+//
+//        System.out.println("Print the return:"+ createStringList(line1, line2, line3, line4, line5));
 
-        System.out.println("Print from return:" +sumOfValues(sumTest1)+"\n");
-        System.out.println("Print from return:" +sumOfValues(sumTest2)+"\n");
-        System.out.println("Print from return:" +sumOfValues(sumTest3)+"\n");
+        ////Test for seventh *******
+//        ArrayList<String> script = new ArrayList<>();
+//        script.add("What");
+//        script.add(" is");
+//        script.add(" this,");
+//        script.add(" backwards");
+//        script.add(" day?");
+//
+//        reversedStringOrder(script);
+
+
 
 
 
@@ -95,7 +124,7 @@ public class Main {
         for (char c: chars){
             word += String.valueOf(c);
         }
-        System.out.println(word);
+        System.out.println("Print from within function:" +word);
         return word;
     }
 
@@ -112,7 +141,7 @@ public class Main {
 
     //7. Seventh function of lab--------------------------*******
     public static void reversedStringOrder(ArrayList<String> stringArrayList){
-        for (int i = stringArrayList.size(); i>0 ; i--) {
+        for (int i = stringArrayList.size()-1; i>=0 ; i--) {
             System.out.println(stringArrayList.get(i));
         }
 
