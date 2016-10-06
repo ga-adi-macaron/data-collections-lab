@@ -12,8 +12,7 @@ creator:
 > ***Note:*** _This should be done independently._
 
 ##Objective:
-- Demonstrate understanding of arrays and Lists by applying them under certain conditions.
-- Demonstrate understanding of the difference between arrays, ArrayLists, and LinkedLists.
+- Demonstrate understanding of arrays and Lists
 
 
 ## Exercise
