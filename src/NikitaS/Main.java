@@ -6,12 +6,13 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        //Test for first
-        stringLengthOrValue("Nikita");
-        stringLengthOrValue("Car");
-        stringLengthOrValue("Fifth");
+        ////Test for first
+//        stringLengthOrValue("Nikita");
+//        stringLengthOrValue("Nick");
+//        stringLengthOrValue("Fifth");
 
-        //Test for second
+//        //Test for second
+//        reversedOrder();
 
     }
 
@@ -33,7 +34,7 @@ public class Main {
         for (int i = 0; i < nums.length; i++) {
             nums[i]= i;
         }
-        for (int i = nums.length; i >0; i--) {
+        for (int i = nums.length-1; i >=0; i--) {
             System.out.println(nums[i]);
         }
     }
