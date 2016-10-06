@@ -62,9 +62,28 @@ public class Main {
 //
 //        reversedStringOrder(script);
 
-
-
-
+        ////Test for eighth ********
+//        String[] dry= {"We", " come"," from", " the", " land", " of", " ice", " and", " snow", " From", " the", " midnight", " sun", " where", "the", " hot", "springs", "flow"};
+//        ArrayList<String> stringL1= new ArrayList<>();
+//        ArrayList<String> stringL2= new ArrayList<>();
+//        ArrayList<String> stringL3= new ArrayList<>();
+//
+//        for (int i = 0; i < 10; i++) {
+//            stringL1.add(dry[i]);
+//
+//        }
+//
+//        for (int i = 0; i < dry.length; i++) {
+//            stringL2.add(dry[i]);
+//        }
+//
+//        for (int i = 0; i <9 ; i++) {
+//            stringL3.add(dry[i]);
+//        }
+//
+//        System.out.println(printOrAdd(stringL1)+"\n");
+//        System.out.println(printOrAdd(stringL2)+"\n");
+//        System.out.println(printOrAdd(stringL3)+"\n");
 
     }
 
@@ -149,14 +168,13 @@ public class Main {
 
     //8. Eighth function of lab----------------------------********
     public static List<String> printOrAdd(ArrayList<String> stringList){
-        int sizeOfList = stringList.size();
-        if (sizeOfList<10){
-            while (sizeOfList<10){
-                stringList.add("Filler Word");
+        if (stringList.size()<10){
+            while (stringList.size()<10){
+                stringList.add("Ahhh ahh!");
             }
-        }else if (sizeOfList>10){
-            System.out.println("Size of list is too large.");
-            return stringList;
+        }else if (stringList.size()>10){
+            System.out.println("Size of list is too large. I shortened it down to 10 for you.");
+            return stringList.subList(0,10);
         }
         return stringList;
 
