@@ -182,6 +182,7 @@ public class Main {
             System.out.println(stringArrayList.get(i));
         }
 
+
     }
 
     //8. Eighth function of lab----------------------------********
@@ -215,12 +216,6 @@ public class Main {
             return middle;
         }
 
-
     }
-
-
-
-
-
 
 }
