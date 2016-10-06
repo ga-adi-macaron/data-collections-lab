@@ -3,20 +3,43 @@ package NikitaS;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Main {
 
     public static void main(String[] args) {
-        ////Test for first
+        ////Test for first *
 //        stringLengthOrValue("Nikita");
 //        stringLengthOrValue("Nick");
 //        stringLengthOrValue("Fifth");
 
-//        //Test for second
+//        //Test for second **
 //        reversedOrder();
+
+        ////Setup for third ***
+//        int[] test1= new int[1];
+//        int[] test2 =new int[0];
+//        int[] test3={5,12,7,2,13,16,19,1337,7,20};
+//        test1[0]= 42
+
+        ////Test for third ***
+//        System.out.println(maxValue(test1));
+//        System.out.println(maxValue(test2));
+//        System.out.println(maxValue(test3));
+
+        ////Test for fourth ****
+        double[] sumTest1 = {4.2,7.3,9.8, 1.0, 6.5};
+        double[] sumTest2 = {0.0, 4d, 0, 4d, 2d};
+        double[] sumTest3 = {0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8};
+
+        System.out.println("Print from return:" +sumOfValues(sumTest1)+"\n");
+        System.out.println("Print from return:" +sumOfValues(sumTest2)+"\n");
+        System.out.println("Print from return:" +sumOfValues(sumTest3)+"\n");
+
+
 
     }
 
-    //1. First function of lab---------------------------
+    //1. First function of lab--------------------------- *
     public static void stringLengthOrValue(String word){
         int lenWord = word.length();
         if (lenWord>5){
@@ -28,7 +51,7 @@ public class Main {
         }
     }
 
-    //2. Second function of lab-----------------------
+    //2. Second function of lab----------------------- **
     public static void reversedOrder(){
         int[] nums = new int[10];
         for (int i = 0; i < nums.length; i++) {
@@ -39,7 +62,7 @@ public class Main {
         }
     }
 
-    //3. Third function of lab---------------------------
+    //3. Third function of lab--------------------------- ***
     public static int maxValue(int[] numArr){
         if (numArr.length == 1){
             return numArr[0];
@@ -55,17 +78,18 @@ public class Main {
             return maxVal;
         }
     }
-    //4. Fourth function of lab----------------------
+
+    //4. Fourth function of lab----------------------****
     public static double sumOfValues(double[] dubArr){
-        int sum = 0;
+        double sum = 0;
         for (double d: dubArr){
             sum+=d;
         }
-        System.out.println(sum);
+        System.out.println("Print from function:" + sum);
         return sum;
     }
 
-    //5. Fifth function of lab-----------------------
+    //5. Fifth function of lab-----------------------*****
     public static String charsToString(char[] chars){
         String word = "";
         for (char c: chars){
@@ -76,7 +100,7 @@ public class Main {
     }
 
 
-    //6. Sixth function of lab--------------------------
+    //6. Sixth function of lab--------------------------******
     public static List<String> createStringList(String... strings){
         ArrayList<String> myStringList = new ArrayList<>();
         for (String string:strings){
@@ -86,7 +110,7 @@ public class Main {
         return myStringList;
     }
 
-    //7. Seventh function of lab--------------------------
+    //7. Seventh function of lab--------------------------*******
     public static void reversedStringOrder(ArrayList<String> stringArrayList){
         for (int i = stringArrayList.size(); i>0 ; i--) {
             System.out.println(stringArrayList.get(i));
@@ -94,7 +118,7 @@ public class Main {
 
     }
 
-    //8. Eighth function of lab----------------------------
+    //8. Eighth function of lab----------------------------********
     public static List<String> printOrAdd(ArrayList<String> stringList){
         int sizeOfList = stringList.size();
         if (sizeOfList<10){
@@ -110,7 +134,7 @@ public class Main {
     }
 
 
-    //9. Ninth function of lab--------------------------------
+    //9. Ninth function of lab--------------------------------*********
     public static int findMiddle(int[] intArr){
         int midPoint = intArr.length/2;
         if (intArr.length%2 == 0){
