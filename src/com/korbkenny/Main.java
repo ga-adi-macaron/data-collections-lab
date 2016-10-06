@@ -1,6 +1,7 @@
 package com.korbkenny;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -26,19 +27,29 @@ public class Main {
 
         //5
         char[] toString = {'h', 'o', 'w', 'd', 'y'};
+        charsToStrings(toString);
 
 
         //6
+        List<String> forNumber7 = new ArrayList<>();
         myStringListCall();
 
         //7
-
+        List<String> myStringList = new ArrayList<>();
+        myStringList.add("jeff");
+        myStringList.add("is");
+        myStringList.add("a");
+        myStringList.add("cool");
+        myStringList.add("name");
+        reversedStringOrder(myStringList);
 
         //8
-
+        List<String> justSomeWords = new ArrayList<>(Arrays.asList("Hey", "party", "people."));
+        printOrAdd(justSomeWords);
 
         //9
-
+        int[] theArray = {2, 12, 22, 32, 42, 52, 82};
+        findMiddle(theArray);
 
 
     }
@@ -99,7 +110,15 @@ public class Main {
     }
 
     //5
+    public static String charsToStrings(char[] toString){
+        String daWord = "";
+        for (int i = 0; i < toString.length; i++) {
+            daWord = daWord + toString[i];
 
+        }
+        System.out.println(daWord);
+        return daWord;
+    }
 
 
 
@@ -113,6 +132,8 @@ public class Main {
             myStringList.add("cool");
             myStringList.add("name");
 
+
+
         for (int i = 0; i < myStringList.size(); i++) {
             System.out.println(myStringList.get(i));
         }
@@ -121,7 +142,38 @@ public class Main {
     }
 
 
+    //7
+    public static void reversedStringOrder(List<String> myStringList){
+        for (int i = myStringList.size()-1; i >= 0; i--) {
+            System.out.println(myStringList.get(i));
+        }
 
+
+    }
+
+
+
+    //8
+    public static void printOrAdd(List<String> justSomeWords){
+
+
+        String[] extraWords = {"There", "is", "a", "new", "sheriff", "in", "town", "so", "like", "yeah"};
+        int sizeHolder = justSomeWords.size();
+        for (int i = justSomeWords.size(); i < 10; i++) {
+            if(i < 10){
+                    justSomeWords.add(extraWords[i - sizeHolder]);
+            }
+        }
+        System.out.println(justSomeWords);
+        return;
+    }
+
+
+    //9
+    public static void findMiddle(int[] theArray){
+        int daMiddle = theArray.length / 2;
+        System.out.println(theArray[daMiddle]);
+    }
 
     }
 
