@@ -85,6 +85,24 @@ public class Main {
 //        System.out.println(printOrAdd(stringL2)+"\n");
 //        System.out.println(printOrAdd(stringL3)+"\n");
 
+
+        ////Setup for ninth--------------- *********
+//        int[] numSet1= {0,14,42,24,41,53};
+//        int[] numSet2= {2,5,0};
+//        int[] numSet3={42};
+//        int[] numSet4={7,2,9,404,73,81,18};
+////
+//        ////Test for ninth--------------- *********
+//        int[] resultingArray = findMiddle(numSet4); //Determine which set you want to test
+////
+////
+//        if (resultingArray.length == 2){
+//            System.out.println("The 2 mid values, since array size is even:"+resultingArray[0]+" "+ resultingArray[1]);
+//        }else {
+//            System.out.println("The midpoint value is: " +resultingArray[0]);
+//        }
+
+
     }
 
     //1. First function of lab--------------------------- *
@@ -182,16 +200,21 @@ public class Main {
 
 
     //9. Ninth function of lab--------------------------------*********
-    public static int findMiddle(int[] intArr){
+    public static int[] findMiddle(int[] intArr){
         int midPoint = intArr.length/2;
         if (intArr.length%2 == 0){
-            String twoNumbs = String.valueOf(intArr[midPoint-1])+String.valueOf(intArr[midPoint]);
-            System.out.println("Since the number is of even length. These are the two numbers in the middle:" + twoNumbs);
-            return Integer.parseInt(twoNumbs);
-        }else{
-            System.out.println(intArr[midPoint-1]);
-            return intArr[midPoint-1];
+            int[] middle = {intArr[midPoint-1], intArr[midPoint]};
+            System.out.println("Since the array is of even length, these are the two numbers in the middle:" + middle[0]+ middle[1]);
+            return middle;
+        }else if(intArr.length==1){
+            System.out.println("Only 1 value in array.");
+            return intArr;
+        } else{
+            int[] middle = {intArr[midPoint]};
+            System.out.println("print from within Function:" + intArr[midPoint]);
+            return middle;
         }
+
 
     }
 
