@@ -22,7 +22,8 @@ public class Main {
         System.out.println(charToString(myArray3));
         stringLists();
         reversedStringOrder(myStringList);
-        
+        printOrAdd(myStringList);
+
     }
 
     //1st
@@ -80,6 +81,7 @@ public class Main {
 
     }
 
+    //7th
     public static void reversedStringOrder(List<String> myStringList) {
 
         for (int i = myStringList.size() - 1; i >= 0 ; i--) {
@@ -88,6 +90,21 @@ public class Main {
     }
 
 
-
-
+    //8th
+    public static void printOrAdd(List<String> myStringList) {
+        if (myStringList.size() == 10) {
+            for (int i = 0; i < myStringList.size(); i++) {
+                System.out.println(myStringList.get(i));
+            }
+        } else {
+            myStringList.add("NewString1");
+            myStringList.add("NewString2");
+            myStringList.add("NewString3");
+            myStringList.add("NewString4");
+            myStringList.add("NewString5");
+            for (int i = 0; i < myStringList.size(); i++) {
+                System.out.println(myStringList.get(i));
+            }
+        }
+    }
 }
