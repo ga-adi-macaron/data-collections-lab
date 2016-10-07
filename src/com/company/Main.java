@@ -14,16 +14,16 @@ public class Main {
         myStringList.add("Istanbul");
         stringLengthOrValue("Osma");
         reversedOrder();
-        int[] myArray = {1, 2, 3 };
+        int[] myArray = {5, 9, 15 };
         System.out.println(maxValue(myArray));
-        double[] myArray1 = {1, 2, 3, 10, 5 };
+        double[] myArray1 = {2, 3, 10, 5};
         System.out.println(sumOfValues(myArray1));
         char[] myArray3 = {'s', 'e', 'r', 'k', 'a', 'n'};
         System.out.println(charToString(myArray3));
         stringLists();
         reversedStringOrder(myStringList);
         printOrAdd(myStringList);
-
+        findMiddle(myArray);
     }
 
     //1st
@@ -59,8 +59,8 @@ public class Main {
     //4th
     public static double sumOfValues(double[] num) {
         double sum = 0;
-        for (int i = 1; i < num.length; i++) {
-        sum = num[i] + num[i - 1];
+        for (int i = 0; i < num.length; i++) {
+        sum = sum + num[i];
         }
         return sum;
     }
@@ -107,4 +107,14 @@ public class Main {
             }
         }
     }
+    
+    //9th
+    public static void findMiddle(int[] num) {
+        int middleIndex = (num.length - 1) / 2;
+        if (num.length % 2 != 0) {
+            System.out.println(num[middleIndex]);
+        } else System.out.println("Only if the array has an odd number of elements in it; it has a middle index. " +
+                "Sorry!");
+    }
+
 }
