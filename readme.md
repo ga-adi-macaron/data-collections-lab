@@ -12,14 +12,13 @@ creator:
 > ***Note:*** _This should be done independently._
 
 ##Objective:
-- Demonstrate understanding of arrays and Lists by applying them under certain conditions.
-- Demonstrate understanding of the difference between arrays, ArrayLists, and LinkedLists.
+- Demonstrate understanding of arrays and Lists
 
 
 ## Exercise
 
 #### Requirements
-Write 9 functions that accept parameters that use combinations of control flow and multiple conditionals. Some of these functions will also require you to iterate over data collections (Arrays, ArrayLists, LinkedLists). When a function is created, please call it in the main method and test all the cases including edge ones (e.g. empty strings, null values, big and small values). It is of high importance to practice and master Java fundamentals, which are the core of Android development.
+Write 9 functions that accept parameters that use combinations of control flow and multiple conditionals. Some of these functions will also require you to iterate over data collections (Arrays, ArrayLists). When a function is created, please call it in the main method and test all the cases including edge ones (e.g. empty strings, null values, big and small values). It is of high importance to practice and master Java fundamentals, which are the core of Android development.
 
 #### Functions
 1. Write a function `stringLengthOrValue` that accepts one `String` parameter. This function should print the value of the `String` parameter to the command line if the length of the `String` is greater than 5. If the length of the `String` is less than 5, print the length of the `String` parameter.
@@ -47,3 +46,9 @@ You are expected to turn in a Java program with 9 functions. Be sure to test you
 #### Resources
 
 - [Collections](https://developer.android.com/reference/java/util/Collections.html)
+
+---
+
+## Licensing
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact [legal@ga.co](mailto:legal@ga.co).
